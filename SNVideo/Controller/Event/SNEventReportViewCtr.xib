@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SNEventReportViewCtr">
+            <connections>
+                <outlet property="btn_all" destination="YCr-3N-chD" id="Vbb-88-Ozv"/>
+                <outlet property="btn_purle" destination="ZMU-3T-Nof" id="ccP-uC-sqE"/>
+                <outlet property="btn_red" destination="Tkb-Rt-3Ds" id="Fgn-mo-DXY"/>
+                <outlet property="btn_yellow" destination="Zmn-yd-eb1" id="HQk-yY-ZSr"/>
+                <outlet property="pgc_time" destination="ZYR-Op-pMf" id="W7H-Eb-GWG"/>
+                <outlet property="scr_chart" destination="FKi-sc-Hfv" id="rgn-HH-Rgx"/>
+                <outlet property="scr_time" destination="Nur-TI-BFa" id="Ii5-UJ-XcG"/>
+                <outlet property="tbv_result" destination="1Nk-lv-lFI" id="JZC-oa-7wX"/>
+                <outlet property="v_eventType" destination="Dai-v6-6su" id="YOE-De-nxG"/>
+                <outlet property="v_report" destination="a7T-Yo-krx" id="3FY-gc-A3o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="Nsx-Pt-Oj1" userLabel="View-top">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Nur-TI-BFa" userLabel="Scroll View-top">
+                            <rect key="frame" x="85" y="8" width="150" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="uV4-El-OJD"/>
+                            </connections>
+                        </scrollView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows_right.png" id="PDR-0p-pym">
+                            <rect key="frame" x="236" y="10" width="5" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows_left.png" id="J1T-Ez-UVf">
+                            <rect key="frame" x="79" y="10" width="5" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tKP-2R-R6h" userLabel="Button-left">
+                            <rect key="frame" x="61" y="0.0" width="40" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="eLg-xs-Kmu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WHg-Oh-nuQ" userLabel="Button-right">
+                            <rect key="frame" x="218" y="0.0" width="40" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rightButtonAction:" destination="-1" eventType="touchUpInside" id="eFa-Ri-uTK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="a7T-Yo-krx" userLabel="View-report">
+                    <rect key="frame" x="0.0" y="40" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="FKi-sc-Hfv" userLabel="Scroll View-report">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Dh8-Vj-jla"/>
+                            </connections>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="Dai-v6-6su" userLabel="View-事件类型">
+                    <rect key="frame" x="0.0" y="220" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YCr-3N-chD" userLabel="Button-green">
+                            <rect key="frame" x="63" y="3" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="大标识1_1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="大标识1_2.png"/>
+                            <connections>
+                                <action selector="selectEventTypeAll:" destination="-1" eventType="touchUpInside" id="Do9-HQ-uHu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tkb-Rt-3Ds" userLabel="Button-red">
+                            <rect key="frame" x="113" y="3" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="大标识2_1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="大标识2_2.png"/>
+                            <connections>
+                                <action selector="selectEventTypeRed:" destination="-1" eventType="touchUpInside" id="610-jx-NN7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zmn-yd-eb1" userLabel="Button-yellow">
+                            <rect key="frame" x="163" y="3" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="大标识3_1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="大标识3_2.png"/>
+                            <connections>
+                                <action selector="selectEventTypeYellow:" destination="-1" eventType="touchUpInside" id="qac-O0-2Ck"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZMU-3T-Nof" userLabel="Button-purple">
+                            <rect key="frame" x="213" y="3" width="44" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="大标识4_1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="大标识4_2.png"/>
+                            <connections>
+                                <action selector="selectEventTypePurle:" destination="-1" eventType="touchUpInside" id="vgB-Ex-PiH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="ZYR-Op-pMf" customClass="SNPageControl">
+                    <rect key="frame" x="115" y="249" width="90" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="pageControlAction:" destination="-1" eventType="valueChanged" id="49d-Yk-79G"/>
+                    </connections>
+                </pageControl>
+                <view contentMode="scaleToFill" id="lsy-Lc-ICE" userLabel="View-结果">
+                    <rect key="frame" x="0.0" y="284" width="320" height="170"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1Nk-lv-lFI">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="7Qw-Kg-enS"/>
+                                <outlet property="delegate" destination="-1" id="9S4-9I-Fu5"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.14117647058823529" green="0.1803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrows_left.png" width="5" height="12"/>
+        <image name="arrows_right.png" width="5" height="12"/>
+        <image name="大标识1_1.png" width="44" height="44"/>
+        <image name="大标识1_2.png" width="44" height="44"/>
+        <image name="大标识2_1.png" width="44" height="44"/>
+        <image name="大标识2_2.png" width="44" height="44"/>
+        <image name="大标识3_1.png" width="44" height="44"/>
+        <image name="大标识3_2.png" width="44" height="44"/>
+        <image name="大标识4_1.png" width="44" height="44"/>
+        <image name="大标识4_2.png" width="44" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

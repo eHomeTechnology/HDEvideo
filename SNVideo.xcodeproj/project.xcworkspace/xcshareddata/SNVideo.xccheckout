@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FBECE5FA-4880-430C-BF41-6DAEC1FAA01C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SNVideo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>bf131df9-6ea7-d647-824d-b74f4d470022++505</key>
+		<string>https://192.168.60.200/svn/e-see/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/SNEvideo/SNVideo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>bf131df9-6ea7-d647-824d-b74f4d470022++505</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>bf131df9-6ea7-d647-824d-b74f4d470022++505</key>
+		<string>https://192.168.60.200/svn/e-see</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.60.200/svn/e-see/trunk/iOS/SNEvideo/SNVideo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>bf131df9-6ea7-d647-824d-b74f4d470022++505</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>bf131df9-6ea7-d647-824d-b74f4d470022++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>trunk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

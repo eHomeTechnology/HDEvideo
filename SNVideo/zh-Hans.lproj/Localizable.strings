@@ -1,0 +1,18 @@
+/*
+  Localizable.strings
+  SNVideo
+
+  Created by Hu Dennis on 14-8-18.
+  Copyright (c) 2014年 evideo. All rights reserved.
+*/
+
+"prompt"    = "提示";
+"confirm"   = "确认";
+
+/* 刷新 */
+"Last Update: --"       = "上次刷新时间: --";
+"Last Update: %@"       = "上次刷新时间: %@";
+"Release to Refresh"    = "放开刷新";
+"Refreshing data..."    = "更新中，请稍后...";
+"Loading..."            = "加载中...";
+"Pull to Refresh"       = "下拉刷新";
